@@ -1,0 +1,124 @@
+footer {
+    background-color: #462f2bee;
+    color: #a59667;
+    padding: 50px 0;
+    /* padding-bottom: -20px; */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    /* width: 25%; */
+    margin-bottom: 30px;
+  }
+  
+  .col h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .col ul li a {
+    color: #a59667;
+    text-decoration: none;
+  }
+  
+  .col ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  form input[type="phoneValue"] {
+    /* width: 250px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    width:auto;
+    padding: 10px;
+    background-color: #a59667;
+    color: rgb(244, 244, 244);
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #ab9c6e;
+  }
+  
+  /* Responsive Styles */
+  /* @media only screen and (max-width: 767px) {
+    .col {
+      width: 50%;
+    }
+  
+    form input[type="email"] {
+      width: calc(100% - 20px);
+    }
+  
+    form button[type="submit"] {
+      width: calc(100% - 20px);
+    }
+  } */
+  
+  @media only screen and (max-width: 767px) {
+    *{
+      font-size: 14px;
+    }
+    .col {
+      width: 33%;
+    }
+  
+    form input[type="email"] {
+      width: calc(100% - 20px);
+  
+  
+    }
+  
+    form button[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width:430px) {
+    *{
+      font-size: 14px;
+      /* background-color: #e67e22; */
+    }
+    .col {
+      min-width: 30%;
+    }
+  
+    form input[type="email"] {
+      width: 100%;
+    }
+  
+    form button[type="submit"] {
+      width: 100%;
+    }
+    
+  }

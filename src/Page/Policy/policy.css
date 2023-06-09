@@ -1,0 +1,33 @@
+.cont{
+    padding-top: 90px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+.ids h1{
+    text-align: center;
+    background-color: #e3ded3;
+    font-family: "TrajanProBold";
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.privacy-policy {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  
+  .privacy-policy h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .privacy-policy p {
+    margin-bottom: 10px;
+  }
+  
+ 
+  
