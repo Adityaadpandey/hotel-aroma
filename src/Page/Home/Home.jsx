@@ -9,6 +9,10 @@ import Mid from './Mid';
 
 
 const Home = () => {
+
+    const chng = () => {
+        window.location.href = '/about'
+    }
     return (
         <>
             <div className="hero">
@@ -65,6 +69,12 @@ const Home = () => {
                         </div> */}
                     </div>
                 </Carousel>
+            </div>
+            <div className="glnc">
+                <h2>Varanasi At a Glance</h2>
+                <img alt="" src="https://www.maurya.com/wp-content/themes/hotelier/framework/builder/modules/heading/cap.png" class="img-responsive"/>
+                <p>Experience the enchanting spiritual heritage and vibrant cultural tapestry of Varanasi, as our hotel provides the perfect gateway to immerse yourself in the sacred Ganges River, ancient temples, and the captivating rituals that unfold along its timeless ghats</p>
+                <button onClick={chng}>Find More</button>
             </div>
 
             <Mid />

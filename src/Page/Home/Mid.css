@@ -1,9 +1,79 @@
-.title  
-{  
-        margin-bottom: 20px;  
-        padding:20px  
-}  
-.img  
-{  
-        height: 260px;width:100%  
-} 
+.rooms-section {
+  background-color: #ece7dd;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'Vollkorn', serif;
+
+}
+
+.rooms-section h2 {
+  font-size: 24px;
+  color: #84704d;
+  font-family: 'TrajanProRegular';
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rooms-section h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 38px;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.image-chain {
+  margin-bottom: 20px;
+}
+
+.image-item {
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(55, 37, 33, 0.81);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+
+.image-item h3 {
+  padding-top: 18px;
+  font-size: 36px;
+}
+
+.image-overlay p {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0;
+  text-align: center;
+}
+
+.image-item:hover p {
+  padding-top: 12px;
+  opacity: 1;
+}
+
+.image-item:hover .image-overlay {
+  background-color: rgba(55, 37, 33, 0.81);
+  opacity: 1;
+  height: 100%;
+}

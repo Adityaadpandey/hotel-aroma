@@ -7,25 +7,28 @@ import "./Menu.css"
 const Menu = () => {
     return (
         <div className="sticky-menu">
-            <ul>
+            <ul><a href="/">
                 <li>
-                    <span><a href="/"><i class="fa-solid fa-house-chimney"></i> </a></span>
+                    <span><i class="fa-solid fa-house-chimney"></i></span>
                     <span className="hover-text">Home</span>
-                </li>
-                <li>
-                    <span><a href="mailto:adityapandeyadp@gmail.com"><i class="fa-solid fa-envelope"></i></a></span>
-                    <span className="hover-text">Mail</span>
-                </li>
-                <li>
-                    <span><a href="tel:+919415379379"><i class="fa-solid fa-phone"></i></a></span>
-                    <span className="hover-text">Phone</span>
-                
-                </li>
-                <li>
-                    <span><a href="/rooms"><i class="fa-regular fa-calendar"></i></a></span>
-                    <span className="hover-text">Book Now</span>
-                
-                </li>
+                </li> </a>
+                <a href="mailto:adityapandeyadp@gmail.com">
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span className="hover-text">Mail</span>
+                    </li></a>
+                <a href="tel:+919415379379">
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span className="hover-text">Phone</span>
+
+                    </li></a>
+                <a href="/rooms">
+                    <li>
+                        <span><i class="fa-regular fa-calendar"></i></span>
+                        <span className="hover-text">Book Now</span>
+
+                    </li></a>
             </ul>
         </div>
     )

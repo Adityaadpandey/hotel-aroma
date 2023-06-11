@@ -93,8 +93,8 @@ footer {
       width: 33%;
     }
   
-    form input[type="email"] {
-      width: calc(100% - 20px);
+    form input[type="phoneValue"] {
+      width: calc(100% );
   
   
     }

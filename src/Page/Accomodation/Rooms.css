@@ -1,0 +1,94 @@
+main {
+    margin-top: 50px;
+    padding: 50px;
+  }
+  
+  .room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    transition: background-image 1s ease;
+  }
+  
+  .room {
+    width: 30%;
+    padding:10px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-image 1s ease;
+  
+  }
+  
+  .room img {
+    width: 100%;
+    height: 200px;
+    transition: background-image 1s ease;
+    object-fit: cover;
+  }
+  
+  .room h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .room p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .room a {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .room a:hover {
+    background-color: #e67e22;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .room {
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+  
+      margin-bottom: 50px;
+    }
+    
+    .room img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .room-info h2 {
+      font-size: 24px;
+    }
+    
+    .room-info p {
+      font-size: 16px;
+    }
+    
+    .room-info button {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+    .room-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px;
+      transition: background-image 1s ease;
+    }
+  }
+  
