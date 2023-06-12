@@ -114,54 +114,63 @@ const Rooms = () => {
                         <img src={Room1} alt="Room 1" />
                         <h2>Deluxe Room</h2>
                         <p>₹1000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={dlx}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room2} alt="Room 2" />
                         <h2>Superior Room</h2>
                         <p>₹2000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={spr}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room3} alt="Room 3" />
                         <h2>Executive Suite</h2>
                         <p>₹3000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={exs}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room3} alt="Room 3" />
                         <h2>Executive Suite</h2>
                         <p>₹3000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={exs}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room3} alt="Room 3" />
                         <h2>Executive Suite</h2>
                         <p>₹3000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={exs}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room3} alt="Room 3" />
                         <h2>Executive Suite</h2>
                         <p>₹3000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={exs}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room3} alt="Room 3" />
                         <h2>Executive Suite</h2>
                         <p>₹3000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={exs}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room3} alt="Room 3" />
                         <h2>Executive Suite</h2>
                         <p>₹3000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={exs}>Book Now</a>
                     </div>
                     <div className="room">
                         <img src={Room3} alt="Room 3" />
                         <h2>Executive Suite</h2>
                         <p>₹3000 per night</p>
+                        <p>-Of This Hotel</p>
                         <a href="/booking" onClick={exs}>Book Now</a>
                     </div>
                 </div>
