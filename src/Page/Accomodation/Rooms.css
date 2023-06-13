@@ -1,65 +1,81 @@
-.main-cont {
-  /* position: relative; */
-  margin-top: 120px;
-
+.suites-page {
+  padding: 100px 0;
+  text-align: center;
 }
 
-.room-cont {}
+.section-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
 
-.room {
-  width: 55%;
+.suite-cards {
   display: flex;
-  /* flex-wrap:wrap; */
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  /* margin-left: 80px; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
-.room img {
-  max-width: 60%;
-  /* margin: 0 auto; */
-  margin-left: 10px;
+.suite-card {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  /* position: relative; */
+  display: flex;
 }
 
-.con {
-  /* padding-left: 30px; */
-
+.suite-card:hover {
+  transform: translateY(-5px);
 }
 
-.con h2 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 36px;
-  padding-left: -10px;
+.image-container {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
 }
 
-.con p {
-    padding-left: 20px;
-
+.image-container img {
+  width: 80%;
+  float: left;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.con h4 {
-  margin-bottom: 0;
-  /* margin :0 auto */
+.content {
+  padding: 20px;
 }
 
-@media (max-width: 768px) {
-  .room {
-    width: 98%;
-    margin: 0 auto;
-    padding: 5px;
-  }
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
 
-  .room img {
-    width: 60%;
-    margin-left: 0;
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
 
-  }
+.btn {
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .con h2 {
-    font-size: 24px;
-    padding-left: 10px;
-
-  }
+.btn:hover {
+  background-color: #222;
 }
