@@ -1,10 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import "./Home.css"
-import hero1 from "../../Assets/fine.jpg"
-import hero2 from "../../Assets/fine.jpg"
-import hero3 from "../../Assets/fine.jpg"
+import { default as hero1, default as hero2, default as hero3 } from "../../Assets/fine.jpg";
+import "./Home.css";
 import Mid from './Mid';
 
 
@@ -72,7 +70,7 @@ const Home = () => {
             </div>
             <div className="glnc">
                 <h2>Varanasi At a Glance</h2>
-                <img alt="" src="https://www.maurya.com/wp-content/themes/hotelier/framework/builder/modules/heading/cap.png" class="img-responsive"/>
+                <img alt="" src="https://www.maurya.com/wp-content/themes/hotelier/framework/builder/modules/heading/cap.png" className="img-responsive" />
                 <p>Experience the enchanting spiritual heritage and vibrant cultural tapestry of Varanasi, as our hotel provides the perfect gateway to immerse yourself in the sacred Ganges River, ancient temples, and the captivating rituals that unfold along its timeless ghats</p>
                 <button onClick={chng}>Find More</button>
             </div>

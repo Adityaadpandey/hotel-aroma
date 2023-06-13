@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import "./Header.css"
-import logo from '../../Assets/fine.jpg'
-import side from '../../Assets/bg.png'
+import side from '../../Assets/bg.png';
+import logo from '../../Assets/fine.jpg';
+import "./Header.css";
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Header = () => {
     };
     return (
         <>
-            <div class="contnr">
+            <div className="contnr">
                 <a href="/booking">
                     <img src={side} alt="Overlay " className="overlay-image-1" />
                 </a>

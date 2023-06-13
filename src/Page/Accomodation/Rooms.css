@@ -1,95 +1,65 @@
-main {
-  margin-top: 50px;
-  padding: 50px;
+.main-cont {
+  /* position: relative; */
+  margin-top: 120px;
+
 }
 
-.room-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 50px;
-  transition: background-image 1s ease;
-}
+.room-cont {}
 
 .room {
-  background-color: #e6e3b9;
-  width: 30%;
-  padding: 10px;
-  margin-bottom: 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.322);
-  transition: background-image 1s ease;
-
+  width: 55%;
+  display: flex;
+  /* flex-wrap:wrap; */
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* margin-left: 80px; */
 }
 
 .room img {
-  width: 100%;
-  height: 200px;
-  transition: background-image 1s ease;
-  object-fit: cover;
+  max-width: 60%;
+  /* margin: 0 auto; */
+  margin-left: 10px;
 }
 
-.room h2 {
-  font-size: 24px;
-  margin-top: 20px;
+.con {
+  /* padding-left: 30px; */
+
 }
 
-.room p {
-  font-size: 16px;
-  margin-top: 10px;
+.con h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 36px;
+  padding-left: -10px;
 }
 
-.room a {
-  display: block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #f39c12;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 3px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.con p {
+    padding-left: 20px;
+
 }
 
-.room a:hover {
-  background-color: #e67e22;
+.con h4 {
+  margin-bottom: 0;
+  /* margin :0 auto */
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
   .room {
-    flex-direction: column;
-    display: flex;
-    width: 130%;
-    margin-bottom: 50px;
-    margin-left: -42px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 5px;
   }
 
   .room img {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
+    width: 60%;
+    margin-left: 0;
+
   }
 
-  .room-info h2 {
+  .con h2 {
     font-size: 24px;
-  }
+    padding-left: 10px;
 
-  .room-info p {
-    font-size: 16px;
-  }
-
-  .room-info button {
-    font-size: 18px;
-    padding: 10px 20px;
-  }
-
-  .room-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
-    transition: background-image 1s ease;
   }
 }
