@@ -99,3 +99,43 @@
   list-style: none;
   
 }
+.hotel-services {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+}
+
+.services-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.service-item i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.service-name {
+  font-size: 16px;
+  color: #666;
+}
