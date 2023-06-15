@@ -17,49 +17,49 @@ const Gallery = () => {
                 <div className="gallery-container">
                     <div className="gallery-item">
                         <img src={img} alt="Galle 1" />
-                        <div className="image-overlay">
+                        <div className="img-overlay">
                             <h3>Image 1</h3>
                             <p>Description of Image 1</p>
                         </div>
                     </div>
                     <div className="gallery-item">
                         <img src={img} alt="Galle 1" />
-                        <div className="image-overlay">
+                        <div className="img-overlay">
                             <h3>Image 1</h3>
                             <p>Description of Image 1</p>
                         </div>
                     </div>
                     <div className="gallery-item">
                         <img src={img} alt="Galle 1" />
-                        <div className="image-overlay">
+                        <div className="img-overlay">
                             <h3>Image 1</h3>
                             <p>Description of Image 1</p>
                         </div>
                     </div>
                     <div className="gallery-item">
                         <img src={img} alt="Galle 1" />
-                        <div className="image-overlay">
+                        <div className="img-overlay">
                             <h3>Image 1</h3>
                             <p>Description of Image 1</p>
                         </div>
                     </div>
                     <div className="gallery-item">
                         <img src={img} alt="Galle 1" />
-                        <div className="image-overlay">
+                        <div className="img-overlay">
                             <h3>Image 1</h3>
                             <p>Description of Image 1</p>
                         </div>
                     </div>
                     <div className="gallery-item">
                         <img src={img} alt="Galle 1" />
-                        <div className="image-overlay">
+                        <div className="img-overlay">
                             <h3>Image 1</h3>
                             <p>Description of Image 1</p>
                         </div>
                     </div>
                     <div className="gallery-item">
                         <img src={img} alt="Galle 1" />
-                        <div className="image-overlay">
+                        <div className="img-overlay">
                             <h3>Image 1</h3>
                             <p>Description of Image 1</p>
                         </div>

@@ -45,19 +45,28 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  margin-bottom: 10px;
+  /* padding-bottom: 10px; */
   width: 100%;
-  background-color: rgba(55, 37, 33, 0.81);
+  background-color: rgba(63, 44, 39, 0.79);
   color: #fff;
   padding: 10px;
   border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.8s ease;
+  opacity: 1;
+  height: 25%;
+  transition: opacity 0.1s ease;
 }
 
+@media only screen and (max-width: 768px) {
+  .image-overlay {
+    padding: 0;
+  }
+}
 
 .image-item h3 {
-  padding-top: 18px;
-  font-size: 36px;
+  /* padding-top: 18px; */
+  font-size: 28px;
+  padding-bottom: 10px;
 }
 
 .image-overlay p {
@@ -71,9 +80,22 @@
   padding-top: 12px;
   opacity: 1;
 }
+.image-item:hover h3{
+  padding-top: 18px;
+
+}
 
 .image-item:hover .image-overlay {
   background-color: rgba(55, 37, 33, 0.81);
   opacity: 1;
   height: 100%;
+}
+
+.catlog-all{
+  margin-top: 20px;
+}
+
+.catlog-all ul{
+  list-style: none;
+  
 }

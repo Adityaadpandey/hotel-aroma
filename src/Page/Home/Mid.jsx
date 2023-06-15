@@ -49,6 +49,15 @@ const Mid = () => {
         </div>
         {/* Add more image items as needed */}
       </OwlCarousel>
+      <div className="catlog-all">
+        <ul>
+          <li>Complimentary Wifi</li>
+          <li>Room Service</li>
+          <li>Room Service</li>
+          <li>Room Service</li>
+          <li>Room Service</li>
+        </ul>
+      </div>
     </div>
 
 

@@ -41,7 +41,7 @@
     border-radius: 5px;
 }
 
-.image-overlay {
+.img-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,13 +54,13 @@
     transition: opacity 0.3s ease;
 }
 
-.image-overlay h3,
-.image-overlay p {
+.img-overlay h3,
+.img-overlay p {
     margin: 0;
     text-align: center;
 }
 
-.gallery-item:hover .image-overlay {
+.gallery-item:hover .img-overlay {
     opacity: 1;
 }
 

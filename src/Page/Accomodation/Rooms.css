@@ -21,7 +21,7 @@
   width: 80%;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.659);
   transition: transform 0.3s ease;
   overflow: hidden;
   /* position: relative; */
@@ -29,7 +29,7 @@
 }
 
 .suite-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-1px);
 }
 
 .image-container {
@@ -78,4 +78,26 @@
 
 .btn:hover {
   background-color: #222;
+}
+
+@media only screen and (max-width: 768px){
+  .suite-cards {
+    display: block;
+    margin: auto;
+    width: 90%;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 40px;
+  }
+  .suite-card{
+    flex-direction: column;
+    width: 100%;
+  }
+  .image-container{
+    margin: 0 auto;
+  }
+  .image-container img {
+    width: 100%;
+
+  }
 }

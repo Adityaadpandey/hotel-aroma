@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { default as hero1, default as hero2, default as hero3 } from "../../Assets/fine.jpg";
 import "./Home.css";
 import Mid from './Mid';
+import Property from './Property';
 
 
 const Home = () => {
@@ -76,6 +77,7 @@ const Home = () => {
             </div>
 
             <Mid />
+            <Property/>
         </>
     )
 }
