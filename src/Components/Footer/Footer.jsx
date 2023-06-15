@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import "./Footer.css";
+import React,{useState} from "react";
+import "./Footer.css"; // Import the CSS file for styling
 
 const Footer = () => {
-  const host = process.env.REACT_APP_HOST;
+  // const host = process.env.REACT_APP_HOST;
+  const host = 'https://my-hotel-bacl.onrender.com'
   const [phone, setPhone] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,110 +17,89 @@ const Footer = () => {
       }),
     })
       .then((res) => res.json())
-      .then((dat1) => console.log(dat1))
-      .then(
-        setTimeout(() => {
-          window.location.href = "/final";
-        }, 100)
-      );
-    // setFormData(initialFormData);
-    // setFormData(initialFormData);
+      .then((dat1) => console.log(dat1));
+    //   .then(
+    //     setTimeout(() => {
+    //       window.location.href = "/final";
+    //     }, 100)
+    //   );
     setPhone("");
   };
   return (
-    <>
-      <footer>
-        <div className="container2">
-          <div className="row">
-            <div className="col">
-              <h4>Aroma Guest House</h4>
-              <p>Lanka Nagwa Road</p>
-              <p>Varanasi, India</p>
-              <p>Phone: 9336991000</p>
-            </div>
-            <div className="col">
-              <h4>Site Link</h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.google.com/maps/place/Aroma+Guest+House/@23.0333333,85.6666667,17z/data=!3m1!4b1!4m5!3m4!1s0x89c9696969696969:0x89c9696969696969!8m2!3d23.0333333!4d85.6666667"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa fa-map-marker"></i>
-                    <span>Aroma Guest House</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="/privacy-policy">Privacy-Policy</a>
-                </li>
-                <li>
-                  <a href="/rooms">Rooms</a>
-                </li>
-                <li>
-                  <a href="https://goo.gl/maps/Cz9XyBT8ReCpbowv8">Location</a>
-                </li>
-                {/* <li>
-              <a href="/">Amenities</a>
-            </li> 
-            <li>
-              <a href="/contact">Contact</a>
-            </li>*/}
-              </ul>
-            </div>
-            <div className="col co-2">
-              {/* <h4>Connect</h4> */}
-              
-                <ul>
-                  <li>
-                    <a href="/">
-                      <i class="fa-brands fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i class="fa-brands fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="tel:9336991000">
-                      <i class="fa-solid fa-phone"></i>
-                    </a>
-                  </li>
-                </ul>
-            </div>
-            <div className="col">
-              <h4>Subscribe</h4>
-              <form onSubmit={handleSubmit}>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="phoneValue"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  required
-                  placeholder="Enter your Phone"
-                />
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
+    <footer className="footer">
+      <div className="container2">
+        <div className="footer-content">
+          <div className="footer-column">
+            <h3>Hotel Name</h3>
+            <p>Address, City, Country</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@example.com</p>
           </div>
-
-          {/* <hr> */}
-          <p>&copy; 2023 Aroma Guest House. All rights reserved.</p>
+          <div className="footer-column">
+            <h3>Explore</h3>
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/rooms">Rooms</a>
+              </li>
+              <li>
+                <a href="/privacy-policy">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h3>Subscribe</h3>
+            <p>Stay updated with our latest offers and promotions.</p>
+            <form className="subscribe-form" onSubmit={handleSubmit}>
+              <input
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                required
+                type="phoneValue"
+                placeholder="Enter your Phone No"
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+            <h3>Follow Us</h3>
+            <ul className="social-icons">
+              <li>
+                <a href="https://www.facebook.com/hotelname">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/hotelname">
+                  <i className="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/hotelname">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/hotelname">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        {/* <button onClick={() => {
-      localStorage.setItem("cred", false);
-      googleLogout();
-    }}>Logout</button> */}
-        {/* <img src={data} alt="image" /> */}
-      </footer>
-    </>
+        <div className="footer-bottom">
+          <p>
+            &copy; {new Date().getFullYear()} Hotel Name. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 

@@ -16,16 +16,16 @@ function App() {
     <>
       <Router>
         <Header />
-        <Menu/>
+        <Menu />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/privacy-policy" component={Priv} />
+          <Route exact path="/privacy-policy" component={Priv} />
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/about-vns" component={Vns} />
           <Route exact path="/about" component={Hotel} />
           <Route exact path="/accomodation" component={Rooms} />
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
 
     </>

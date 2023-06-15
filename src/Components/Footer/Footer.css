@@ -1,176 +1,119 @@
-footer {
+.footer {
   background-color: #462f2bee;
   color: #a59667;
   padding: 50px 0;
-  /* padding-bottom: -20px; */
 }
 
 .container2 {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-.row {
+.footer-content {
   display: flex;
-  flex-wrap: wrap;
-  /* margin: 0 auto; */
-  /* margin-left: 100px; */
-  /* flex-direction: row-reverse; */
+  flex-direction: row;
+  /* flex-wrap: wrap; */
 }
 
-.col {
-  /* width: 25%; */
+.footer-column {
+  width: 100%;
   margin-bottom: 30px;
 }
 
-.co-2 {
-  margin-right: -250px;
-  margin-left: -100px;
-  width: 20%;
-  /* float: right; */
-}
-
-
-.col h4 {
-  font-size: 20px;
+.footer-column  h3 {
+  font-size: 24px;
+  font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 20px;
+  /* color: #fff; */
 }
 
-.col ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.col ul li {
+.footer-column p {
   margin-bottom: 10px;
 }
 
-.col ul li a {
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
   color: #a59667;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.col ul li a:hover {
-  text-decoration: underline;
+.footer-column ul li a:hover {
+  color: #f5c03e;
 }
 
-form input[type="phoneValue"] {
-  /* width: 250px; */
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form input {
+  width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+
+}
+
+.subscribe-form button {
+  background-color: #f5c03e;
+  color: #232323;
   border: none;
-  border-radius: 3px;
+  border-radius: 40px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-form button[type="submit"] {
-  display: block;
-  width: auto;
-  padding: 10px;
-  background-color: #a59667;
-  color: rgb(244, 244, 244);
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.subscribe-form button:hover {
+  background-color: #ffdc73;
 }
 
-form button[type="submit"]:hover {
-  background-color: #ab9c6e;
+.social-icons {
+  display: flex;
 }
 
-/* Responsive Styles */
-/* @media only screen and (max-width: 767px) {
-    .col {
-      width: 50%;
-    }
-  
-    form input[type="email"] {
-      width: calc(100% - 20px);
-    }
-  
-    form button[type="submit"] {
-      width: calc(100% - 20px);
-    }
-  } */
+.social-icons li {
+  margin-right: 10px;
+}
 
-@media only screen and (max-width: 767px) {
-  .row {
-    margin-right: 0;
-    margin: 0 auto;
-  margin-right: -150px;
+.social-icons li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  color: #f5c03e;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container2 {
+    width: 80%
   }
 
-  .co-2 {
-
-    width: 20%;
-    float: right;
-  }
-
-  form {
-    display: flex;
+  .footer-content {
+    /* display: flex; */
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  * {
-    font-size: 14px;
-  }
-
-  .col {
-    min-width: fit-content;
-  }
-
-  form input[type="phoneValue"] {
-    width: calc(100%);
-
-
-  }
-
-  form button[type="submit"] {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width:430px) {
-  .row {
-    margin-right: 0;
-    /* margin: 0 auto; */
-  /* margin-right: -150px; */
-  }
-
-  .co-2 {
-    /* width: 20%; */
-    float: right;
-  }
-
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  * {
-    font-size: 14px;
-    /* background-color: #e67e22; */
-  }
-
-  .col {
-    min-width: 70%;
-  }
-
-  form input[type="phoneValue"] {
-    width: 70%;
-  }
-
-  form button[type="submit"] {
-    width: 50%;
   }
 
 }
