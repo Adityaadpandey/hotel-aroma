@@ -1,7 +1,7 @@
 .footer {
   background-color: #462f2bee;
   color: #a59667;
-  padding: 50px 0;
+  padding: 7px ;
 }
 
 .container2 {
@@ -28,9 +28,9 @@
   /* color: #fff; */
 }
 
-.footer-column p {
+/* .footer-column p {
   margin-bottom: 10px;
-}
+} */
 
 .footer-column ul {
   list-style: none;

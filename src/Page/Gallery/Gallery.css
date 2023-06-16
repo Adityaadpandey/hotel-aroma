@@ -1,12 +1,13 @@
 .gallery-page {
     padding: 20px;
-    padding-top: 80px;
 }
 .coner{
     text-align: center;
     background-color: #e3ded3;
     font-family: "TrajanProBold";
     padding: 10px;
+    padding-top: 80px;
+
     /* padding-bottom: 50px; */
     margin-bottom: 30px
 }
