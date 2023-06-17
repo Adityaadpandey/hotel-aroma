@@ -16,6 +16,12 @@
     border-top: 10px solid #a8934172;
     font-family: 'Kanit', sans-serif;
 }
+.data{
+    border-radius: 20px;
+    width: 100%;
+    margin-right: -68px;
+    /* margin-top: -2px; */
+  }
 
 .logo {
     font-size: 28px;

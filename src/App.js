@@ -10,6 +10,7 @@ import Hotel from './Page/About/Hotel';
 import Rooms from './Page/Accomodation/Rooms';
 import BookingPage from './Page/Booking/Booking';
 import Login from './Page/Login/Login';
+import Contact from './Page/Contact/Contact';
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/accomodation" component={Rooms} />
           <Route exact path="/booking" component={BookingPage} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </Router>

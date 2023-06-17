@@ -32,8 +32,8 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Hotel Name</h3>
             <p>Address, City, Country</p>
-            <p>Phone: +1 234 567 890</p>
-            <p>Email: info@example.com</p>
+            <p>Phone: +91 1234567890</p>
+            <p>Email: info@mail.com</p>
           </div>
           <div className="footer-column">
             <h3>Explore</h3>

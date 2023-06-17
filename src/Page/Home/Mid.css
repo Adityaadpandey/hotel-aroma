@@ -52,6 +52,7 @@
   color: #fff;
   padding: 10px;
   border-radius: 5px;
+  transition: 1s;
   opacity: 1;
   height: 25%;
   transition: opacity 0.1s ease;
@@ -80,25 +81,30 @@
   padding-top: 12px;
   opacity: 1;
 }
-.image-item:hover h3{
+
+.image-item:hover h3 {
   padding-top: 18px;
 
 }
 
 .image-item:hover .image-overlay {
+  /* padding-top: 20px; */
+
   background-color: rgba(55, 37, 33, 0.81);
+  transition: 1s;
   opacity: 1;
   height: 100%;
 }
 
-.catlog-all{
+.catlog-all {
   margin-top: 20px;
 }
 
-.catlog-all ul{
+.catlog-all ul {
   list-style: none;
-  
+
 }
+
 .hotel-services {
   padding: 60px 0;
 }
@@ -120,7 +126,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 300px;
   margin: 0 auto;
 }
 

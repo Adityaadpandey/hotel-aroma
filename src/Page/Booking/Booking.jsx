@@ -1,10 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { DateRangePicker } from "react-date-range";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
+import { format, addDays,differenceInDays } from "date-fns"; // Import the date-fns library for date manipulation
 import moment from "moment";
 import "./Booking.css";
 
 const Booking = () => {
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
+  const [selectedDates, setSelectedDates] = useState([
+    {
+      startDate: new Date(),
+      endDate: addDays(new Date(), 1),
+      key: "selection",
+    },
+  ]);
+  // console.log(selectedDates);
+
+  const handleDateSelect = (ranges) => {
+    setSelectedDates([ranges.selection]);
+  };
+  // const [checkIn, setCheckIn] = useState("");
+  // const [checkOut, setCheckOut] = useState("");
   const [guests, setGuests] = useState("");
   const [roomType, setRoomType] = useState("");
   const [phone, setPhone] = useState("");
@@ -18,16 +34,24 @@ const Booking = () => {
 
   useEffect(() => {
     const room = localStorage.getItem("room");
-    if (room === "Deluxe") {
-      setRoomType("Deluxe");
-    } else if (room === "Superior") {
-      setRoomType("Superior");
-    } else if (room === "Executive") {
-      setRoomType("Executive");
+    if (room === "Luxury Suite") {
+      setRoomType("Luxury Suite");
+    } else if (room === "Deluxe Suite") {
+      setRoomType("Deluxe Suite");
     }
+    // else if (room === "Executive") {
+    //   setRoomType("Executive");
+    // }
   }, []);
+  const { startDate, endDate } = selectedDates[0];
+  const duration = differenceInDays(endDate, startDate);
 
-  const handleSubmit = (e) => {
+   console.log(duration);
+
+  const handleSubmit = async (e) => {
+    const { startDate, endDate } = selectedDates[0];
+    const checkIn = format(startDate, "dd/MM/yyyy");
+    const checkOut = format(endDate, "dd/MM/yyyy");
     const host = process.env.REACT_APP_HOST;
     const cred = localStorage.getItem("Log");
     let data = JSON.parse(localStorage.getItem("user"));
@@ -35,7 +59,7 @@ const Booking = () => {
     var date = moment().utcOffset("+05:30").format("YYYY-MM-DD hh:mm:ss a");
     // console.log(date);
     e.preventDefault();
-    fetch(`${host}/api`, {
+    await fetch(`${host}/api`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -61,8 +85,8 @@ const Booking = () => {
       );
 
     // Clear the form
-    setCheckIn("");
-    setCheckOut("");
+    // setCheckIn("");
+    // setCheckOut("");
     setGuests("");
     setRoomType("");
     setPhone("");
@@ -74,28 +98,17 @@ const Booking = () => {
       <div className="king-con">
         <div className="booking-container">
           <form className="form1" onSubmit={handleSubmit}>
-            <div className="input-group">
-              <label htmlFor="checkIn">Check-in date:</label>
-              <input
-                className="input"
-                type="date"
-                id="checkIn"
-                value={checkIn}
-                onChange={(e) => setCheckIn(e.target.value)}
-                required
+            <div className="date-range-container">
+              <DateRangePicker
+                ranges={selectedDates}
+                onChange={handleDateSelect}
+                minDate={new Date()}
+                showSelectionPreview={true}
+                months={2}
+                direction="vertical"
               />
             </div>
-            <div className="input-group">
-              <label htmlFor="checkOut">Check-out date:</label>
-              <input
-                className="input"
-                type="date"
-                id="checkOut"
-                value={checkOut}
-                onChange={(e) => setCheckOut(e.target.value)}
-                required
-              />
-            </div>
+            <div className="colum-2">
             <div className="input-group">
               <label htmlFor="guests">Number of guests:</label>
               <input
@@ -117,9 +130,9 @@ const Booking = () => {
                 required
               >
                 <option value="">Select a room type</option>
-                <option value="Deluxe">Deluxe</option>
-                <option value="Superior">Superior</option>
-                <option value="Executive">Executive</option>
+                <option value="Luxury Suite">Luxury Suite</option>
+                <option value="Deluxe Suite">Deluxe Suite</option>
+                {/* <option value="Executive">Executive</option> */}
               </select>
             </div>
             <div className="input-group">
@@ -139,6 +152,7 @@ const Booking = () => {
             <button className="button2" type="submit">
               Book Now
             </button>
+           </div>
           </form>
         </div>
       </div>

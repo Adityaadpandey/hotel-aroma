@@ -10,9 +10,9 @@ const Mid = () => {
     "24/7 Front Desk",
     "Room Service",
     "Free Wi-Fi",
-    "Fitness Center",
-    "Swimming Pool",
-    "Restaurant & Bar",
+    // "Fitness Center",
+    // "Swimming Pool",
+    "Restaurants",
   ];
   return (
     <div className="rooms-section">

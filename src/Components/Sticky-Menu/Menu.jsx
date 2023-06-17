@@ -23,7 +23,7 @@ const Menu = () => {
                         <span className="hover-text">Phone</span>
 
                     </li></a>
-                <a href="/rooms">
+                <a href="/accomodation">
                     <li>
                         <span><i className="fa-regular fa-calendar"></i></span>
                         <span className="hover-text">Book Now</span>

@@ -24,6 +24,32 @@ const SuitesPage = () => {
             description: 'Indulge in comfort and style in our deluxe suite with modern amenities.',
             imageUrl: img1,
             amminities: {
+                1: " Wifi",
+                2: " Service",
+                3: "something else",
+
+            }
+
+        },
+        {
+            id: 3,
+            title: 'Deluxe Suite',
+            description: 'Indulge in comfort and style in our deluxe suite with modern amenities.',
+            imageUrl: img1,
+            amminities: {
+                1: "Free Wifi",
+                2: "Room Service",
+                3: "something else",
+
+            }
+
+        },
+        {
+            id: 4,
+            title: 'Deluxe Suite',
+            description: 'Indulge in comfort and style in our deluxe suite with modern amenities.',
+            imageUrl: img1,
+            amminities: {
                 1: "Free Wifi",
                 2: "Room Service",
                 3: "something else",

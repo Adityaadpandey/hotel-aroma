@@ -1,19 +1,39 @@
 .booking-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 60px;
 }
 
+
+@media only screen and (max-width:764px) {
+    .rdrDateRangePickerWrapper {
+        display: inline-flex;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        flex-direction: column-reverse;
+    }
+    .colum-2{
+        width: 100%;
+    }
+}
+/* 
+.colum-2{
+    width: 50%;
+} */
 .form1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
     gap: 1rem;
     padding: 1rem;
     background-color: #f7f7f7;
     border-radius: 8px;
+    flex-direction: row;
+    align-content: center; 
+
 }
 
 .input-group {
