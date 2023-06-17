@@ -1,0 +1,43 @@
+.impot{
+    margin-bottom: 20px;
+}
+.mmain{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    /* background-color: fffff; */
+}
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin:auto;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  tr{
+    /* font-size: 12px; */
+    font-family: 'Playfair Display', sans-serif;
+    color: #000000;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #c9c9c9;
+  }
+  
+
+@media only screen and (max-width: 780px) {
+    table {
+        width: 90%;
+    }
+    tr{
+        font-size: 13px;
+    }
+    
+}

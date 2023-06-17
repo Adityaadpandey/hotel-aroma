@@ -11,6 +11,8 @@ import Rooms from './Page/Accomodation/Rooms';
 import BookingPage from './Page/Booking/Booking';
 import Login from './Page/Login/Login';
 import Contact from './Page/Contact/Contact';
+import Comp from './Service/Req-Room/Comp';
+import Cont from './Service/Req-Contact.jsx/Cont';
 
 
 
@@ -30,6 +32,8 @@ function App() {
           <Route exact path="/booking" component={BookingPage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/comp" component={Comp} />
+          <Route exact path="/cont" component={Cont} />
         </Switch>
         <Footer />
       </Router>
