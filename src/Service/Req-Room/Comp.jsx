@@ -30,7 +30,6 @@ const Comp = () => {
       // console.log(json);
       // setTable(json);
       setTable(json);
-
     } catch (error) {
       // console.log("error", error);
     }
@@ -39,7 +38,7 @@ const Comp = () => {
 
   // }, []);
 
-  const code = (name, phone, room,checkIn,checkOut) => {
+  const code = (name, phone, room, checkIn, checkOut) => {
     window.location.href = `https://api.whatsapp.com/send?phone=91${phone}&text=${name},%20We%20are%20Happy%20that%20you%20booked%20our%20${room}%20room%20in%20your%20Hotel%20from%20${checkIn}%20to%20${checkOut}%20which%20is%20Total%20of%20Thank%20you%20for%20your%20time.https://for-aroma.vercel.app/`;
     // console.log(phone)
   };
@@ -64,8 +63,8 @@ const Comp = () => {
                     <th>guests</th>
                     <th>roomType</th>
                     <th>phone</th>
-                                      <th>Client</th>
-                                      <th>Total</th>
+                    <th>Client</th>
+                    <th>Total</th>
                     <th>Send</th>
                   </tr>
                 </thead>
@@ -80,11 +79,13 @@ const Comp = () => {
                       <td>{item.guests}</td>
                       <td>{item.roomType}</td>
                       <td>{item.phone}</td>
-                          <td>{item.cred}</td>
-                            <td>{item.total}</td>
+                      <td>{item.cred}</td>
+                      <td>{item.total}</td>
                       <td>
                         <button
-                          onClick={() => code(item.name, item.phone, item.roomType)}
+                          onClick={() =>
+                            code(item.name, item.phone, item.roomType)
+                          }
                           className="btn btn-primary"
                         >
                           Send
