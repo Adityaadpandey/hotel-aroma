@@ -29,7 +29,7 @@ const Vns = () => {
         <section className="secion">
             <div className="contr1">
                 <div className="about-wrapper">
-                    <div className="image-container">
+                    <div className="image-containr">
                         <img src={Img} alt="Varanasi" className="about-image" />
                     </div>
                     <div className="content-container">

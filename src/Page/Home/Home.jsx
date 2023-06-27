@@ -5,6 +5,7 @@ import { default as hero1, default as hero2, default as hero3 } from "../../Asse
 import "./Home.css";
 import Mid from './Mid';
 import Property from './Property';
+import Location from './Location';
 
 
 const Home = () => {
@@ -77,7 +78,8 @@ const Home = () => {
             </div>
 
             <Mid />
-            <Property/>
+            <Property />
+            <Location/> 
         </>
     )
 }

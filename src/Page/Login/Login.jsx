@@ -6,9 +6,9 @@ import "./Login.css"
 
 const Login = () => {
     const client =  '378821471431-sicbspjgtk0bgtbfmdq831q0e90s7mou.apps.googleusercontent.com'
-    // if (localStorage.getItem('Log') === 'true') {
-    //     window.location.href = '/booking';
-    // }
+    if (localStorage.getItem('Log') === 'true') {
+        window.location.href = '/booking';
+    }
 
     return (
         <>

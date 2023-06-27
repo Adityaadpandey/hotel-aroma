@@ -52,7 +52,7 @@
 .sticky-menu li:hover .hover-text {
     display: block;
     opacity: 1;
-    transform: translateX(10px);
+    transform: translateX(-20px);
 }
 
 
