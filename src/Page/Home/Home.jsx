@@ -11,7 +11,7 @@ import Location from './Location';
 const Home = () => {
 
     const chng = () => {
-        window.location.href = '/about'
+        window.location.href = '/about-vns'
     }
     return (
         <>

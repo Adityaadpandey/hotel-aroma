@@ -5,6 +5,7 @@ import './Rooms.css';
 
 
 const SuitesPage = () => {
+    
     const suites = [
         {
             id: 1,

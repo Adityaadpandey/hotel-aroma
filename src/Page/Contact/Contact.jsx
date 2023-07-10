@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Contact.css";
 import moment from "moment";
 
 const Contact = () => {
+  useEffect(() => {
+    let data = localStorage.getItem("Log");
+    if (data === null) {
+      window.location.href = "/login";
+    }
+  }, []);
   const host = process.env.REACT_APP_HOST;
   const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState("");
